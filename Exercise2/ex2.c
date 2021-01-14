@@ -19,7 +19,8 @@ int main()
    {
        lseek(fd, 3, SEEK_CUR);
        read(fd, buffer, 16);
-       printf("%s\n", buffer);
+       write(1, buffer, 16);
+       printf("\n");
    }
    close(fd);
 
